@@ -1,0 +1,7 @@
+BAD GOOD
+^t  time
+^f  frequency
+Acc Accelerometer
+Gyro Gyroscope
+Mag Magnitude
+BodyBody Body
