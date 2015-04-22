@@ -12,7 +12,12 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 Credit: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
 ## Goal
+
 The run_analysis.R script will analyze both training and test data sets described above to output a tidy data set containing averaged over all measurements values of the [features of interest](https://github.com/kirnosov/GetCleanData/blob/master/variables_of_interest.txt) for each subject (defined by &rsquo;SID&rsquo; descriptor) performing each of the six activities (defined by &rsquo;activity&rsquo; descriptor).
+
+## Tidy data set variables
+
+Tidy data set variables can be mapped onto source data variables by using [this chart](https://github.com/kirnosov/GetCleanData/blob/master/variables_of_interest.txt). The units of these variables has to be deduced from the description provided in the source data files.
 
 ## Project stages
 
