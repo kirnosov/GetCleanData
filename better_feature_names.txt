@@ -1,7 +1,7 @@
 BAD GOOD
 ^t  time
 ^f  frequency
-Acc Accelerometer
+Acc Acceleration
 Gyro Gyroscope
 Mag Magnitude
 BodyBody Body

@@ -74,15 +74,19 @@ dt<-subset(dt,select=c("SID", "activity", as.character(subFNames)))
 #       BAD      GOOD
 #       ^t       time
 #       ^f       frequency
-#       Acc      Accelerometer
+#       Acc      Acceleration
 #       Gyro     Gyroscope
 #       Mag      Magnitude
 #       BodyBody Body
+if (file.exists("better_feature_names.txt")){
 FNamesChart <- read.table("better_feature_names.txt",head=TRUE)
 for (i in 1:nrow(FNamesChart)){
         # Here I am replacing values from BAD column with the values from
         # GOOD column in all fetures of interest names
         names(dt)<-gsub(FNamesChart$BAD[i], FNamesChart$GOOD[i], names(dt))
+}
+} else {
+print("provide better_feature_names.txt")
 }
 
 ###   5. From the data set in step 4, creates a second, independent tidy data 
