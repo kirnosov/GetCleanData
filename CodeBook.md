@@ -52,3 +52,4 @@ As [described by David Hood](https://class.coursera.org/getdata-013/forum/thread
 > number of observations. For step five get the mean of every one of those combinations.
 
 That is best accomplished with aggregate() function from 'plyr' library (which has to be installed if missing). The averaging of all feature values corresponding to a specific pair of SID and activity values is performed and stored in a tidydt table. It is then written into the [tidy_dataset.txt](https://github.com/kirnosov/GetCleanData/blob/master/tidy_dataset.txt) file.
+That tidy file is sorted in such a way that for each subject (1:30) six rows are given, corresponding to different activities. Each row contains numeric values representing means of specific smartphone readings taken for this subject and activity.
